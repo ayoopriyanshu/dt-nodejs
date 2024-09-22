@@ -57,33 +57,6 @@ export const createEvent = async (req, res) => {
     }
 };
 
-// export const updateEvent = async (req, res) => {
-//     const { id } = req.params;
-//     const { name, tagline, schedule, description, moderator, category, sub_category, rigor_rank } = req.body;
-//     const image = req.file;
-//     try {
-//         const result = await getDb().collection('events').updateOne(
-//             { _id: ObjectId(id) },
-//             {
-//                 $set: {
-//                     name,
-//                     tagline,
-//                     schedule: new Date(schedule),
-//                     description,
-//                     image,
-//                     moderator,
-//                     category,
-//                     sub_category,
-//                     rigor_rank: Number(rigor_rank),
-//                 },
-//             }
-//         );
-//         res.json(result);
-//     } catch (error) {
-//         res.status(500).send('Error updating event');
-//     }
-// };
-
 export const updateEvent = async (req, res) => {
     try {
         const id = new ObjectId(req.params.id);
