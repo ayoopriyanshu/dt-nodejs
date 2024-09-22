@@ -1,7 +1,21 @@
 {
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "mongodb": "^6.9.0",
-    "multer": "^1.4.5-lts.1"
-  }
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.7"
+  },
+  "name": "dt-nodejs",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
